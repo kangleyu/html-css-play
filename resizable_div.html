@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Test Page</title>
+  <link rel="stylesheet" href="http:////cdn.bootcss.com/jqueryui/1.11.4/jquery-ui.css" />
+  <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.js" type="text/javascript"></script>
+  <script src="http://cdn.bootcss.com/jqueryui/1.11.4/jquery-ui.js"></script>
+  <style>
+    html {
+      margin: 0;
+      background-color: #3f3f3f;
+    }
+    
+    body {
+      color: #ffffff;
+    }
+    
+    #outwrapper {
+      display: block;
+      position: fixed;
+      width: 400;
+      height: 300;
+      border: 1px solid #ffffff;
+    }
+    
+    .innerwrapper {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      display: block;
+      overflow: auto;
+      background-color: green;
+    }
+  </style>
+  <script>
+    $(document).ready(function() {
+      $('#outwrapper').resizable({
+        aspectRatio: false
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <h1>Hello World Page</h1>
+  <div id="outwrapper">
+    <div class="innerwrapper">
+      <ul>
+        <li>Item1</li>
+        <li>Item1</li>
+        <li>Item1</li>
+        <li>Item1</li>
+        <li>Item1</li>
+        <li>Item1</li>
+        <li>Item1</li>
+        <li>Item1</li>
+        <li>Item1</li>
+        <li>Item1</li>
+        <li>Item1</li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
